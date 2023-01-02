@@ -5,10 +5,12 @@ This is one of my first projects. This is a game I created using the fundemental
 
 ### Player Configuration
 Step 1: Set a character or symbol to represent your player
+
 Step 2: Set the number of lives between 1 and 10
 
 ### Game Configuration
 Step 1: Set the path length for your game
+
 Step 2: Set the number of moves allowed between 3 and 15
 
 ### Bomb and Treasure Placement
