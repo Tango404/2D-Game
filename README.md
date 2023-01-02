@@ -22,5 +22,7 @@ Step 2: Set the treasure positions. Remember treasure is decoded to the 1 and no
 
 # Symbols
 ! = Bomb
+
 $ = Treasure
+
 & = Bomb and Treasure
