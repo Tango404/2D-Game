@@ -1,4 +1,4 @@
-# 2D Game (Verson 1 [Inital Release])
+# 2D Game (Verson 1.1.1])
 This is one of my first projects. This is a game I created using the fundementals and basics of the C programming language.
 
 # How to play
