@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #define MULTIPLE5 5
 
@@ -33,3 +34,4 @@ int flag = 0;
 int flag2 = 0;
 int i = 0;
 int j = 0;
+char selection[30];

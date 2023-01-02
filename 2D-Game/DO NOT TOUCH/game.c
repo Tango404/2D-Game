@@ -131,32 +131,39 @@ int main(void)
 
     printf("GAME configuration set-up is complete...\n\n");
 
-    printf("------------------------------------\n");
-    printf("    Game Configuration Settings\n");
-    printf("------------------------------------\n");
+    printf("Do you want to see your final configuration (Y or N): ");
+    scanf("%29s[^\n]", selection);
 
-    printf("Player:\n");
-    printf("   Symbol     : %c\n", player.symbol);
-    printf("   Lives      : %d\n", player.lives);
-    printf("   Treasure   : [ready for gameplay]\n");
-    printf("   History    : [ready for gameplay]\n\n");
-
-    printf("Game:\n");
-    printf("   Path Length: %d\n", game.pathLength);
-    printf("   Bombs      : ");
-
-    for (i = 0; i < game.pathLength; i++)
+    if (strcmp(selection, "Y") == 0 || strcmp(selection, "y") == 0)
     {
-        printf("%d", game.bombs[i]);
+        putchar('\n');
+        printf("------------------------------------\n");
+        printf("    Game Configuration Settings\n");
+        printf("------------------------------------\n");
+
+        printf("Player:\n");
+        printf("   Symbol     : %c\n", player.symbol);
+        printf("   Lives      : %d\n", player.lives);
+        printf("   Treasure   : [ready for gameplay]\n");
+        printf("   History    : [ready for gameplay]\n\n");
+
+        printf("Game:\n");
+        printf("   Path Length: %d\n", game.pathLength);
+        printf("   Bombs      : ");
+
+        for (i = 0; i < game.pathLength; i++)
+        {
+            printf("%d", game.bombs[i]);
+        }
+
+        printf("\n");
+        printf("   Treasure   : ");
+
+        for (i = 0; i < game.pathLength; i++) 
+        {
+            printf("%d", game.treasure[i]);
+        };
     }
-
-    printf("\n");
-    printf("   Treasure   : ");
-
-    for (i = 0; i < game.pathLength; i++) 
-    {
-        printf("%d", game.treasure[i]);
-    };
 
     printf("\n\n");
     printf("=======================================\n");
